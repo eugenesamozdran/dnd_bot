@@ -3,9 +3,9 @@ import mysql.connector
 def get_value(condition): # receives a string argument and returns corresponding value from db
     
     config = {
-        'user': 'root', 
-        'password': 'Thrashtilldeath92', 
-        'database': 'sql_hr'
+        'user': '****', 
+        'password': '****', 
+        'database': '****'
     }
 
     con = mysql.connector.connect(**config)
