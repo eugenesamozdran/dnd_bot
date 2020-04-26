@@ -7,7 +7,7 @@ import db_fetcher as fetch
 
 #db = DBHelper()
 
-TOKEN = "1130990755:AAFuCJj27bmVO56obiNfO6JLpeOq4Be_TPA"
+TOKEN = "******"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
