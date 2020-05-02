@@ -7,7 +7,7 @@ import db_fetcher as fetch
 
 #db = DBHelper()
 
-TOKEN = "******"
+TOKEN = "1130990755:AAFuCJj27bmVO56obiNfO6JLpeOq4Be_TPA"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
@@ -54,12 +54,15 @@ def handle_updates(updates):
             text = update["message"]["text"]
             chat = update["message"]["chat"]["id"]
             #items = db.get_items(chat)
-            if text.startswith("/"):
+            if text == "/start":
+                send_message("Welcome to DND conditions list. Type the name of the condition starting with '/' to access the necessary info.", chat)
+            elif text.startswith("/"):
                 condition = ''.join(e for e in text if e.isalnum())
-                message = fetch.get_value(condition)
-                send_message(message, chat)
-            elif text == "/start":
-                send_message("Welcome to DND conditions list. Type the name of the condition starting with '/' to access the necessary info", chat)
+                if condition in fetch.get_pkey():
+                    message = fetch.get_value(condition)
+                    send_message(message, chat)
+                else:
+                    send_message("Please use valid condition description starting with '/'", chat)
             #elif text in items:
                 #db.delete_item(text, chat)
                 #items = db.get_items(chat)
