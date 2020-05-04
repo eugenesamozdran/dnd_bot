@@ -4,9 +4,9 @@ def get_value(condition):
     # receives a string argument equal to some primary key in db table and returns its description from another column
     
     config = {
-        'user': 'root', 
-        'password': 'Thrashtilldeath92', 
-        'database': 'sql_hr'
+        'user': '***', 
+        'password': '***', 
+        'database': '***'
     }
 
     con = mysql.connector.connect(**config)
@@ -26,9 +26,9 @@ def get_pkey():
     # forms a list of primary key values from database
 
     config = {
-        'user': 'root', 
-        'password': 'Thrashtilldeath92', 
-        'database': 'sql_hr'
+        'user': '***', 
+        'password': '***', 
+        'database': '***'
     }
 
     con = mysql.connector.connect(**config)
