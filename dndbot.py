@@ -4,7 +4,7 @@ import time
 import urllib
 import db_fetcher as fetch
 
-TOKEN = "1130990755:AAFuCJj27bmVO56obiNfO6JLpeOq4Be_TPA"
+TOKEN = "my_bot_token"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
