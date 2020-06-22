@@ -49,7 +49,8 @@ def handle_update(update):
     text = update["message"]["text"]
     chat = update["message"]["chat"]["id"]
     if text == "/start":
-        send_message("Welcome to DND conditions list. Type the name of the condition starting with '/' to access the necessary info.", chat)
+        send_message("""Welcome to DND conditions list. Type the name
+        of the condition starting with '/' to access the necessary info.""", chat)
     elif text.startswith("/"):
         condition = ''.join(e for e in text if e.isalnum())
         if condition in fetch.get_pkey():
