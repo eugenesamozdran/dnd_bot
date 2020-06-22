@@ -1,4 +1,5 @@
 This is my project for practice. I wanted to learn how to make a simple bot from scratch and set up interaction with MySQL database.
+It is called "dnd helper" because it helps to quickly find tricky info from the rules of "Dungeons and Dragons" - tabletop RPG which I like a lot.
 
 The bot is available at https://t.me/dnd_assistant_bot
 
