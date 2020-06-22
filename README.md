@@ -10,4 +10,4 @@ Sent and received messages are handled by Python script. Bot takes info for send
 Database was created using MySQL Workbench, CSV file can be found in the repository.
 
 
-You would need to install Flask and mysql.connector libraries to run this on your machine. Of course, you would also need to create your own basic Telegram bot via @BotFather in order to have access to unique bot token.
+Additional libraries are Flask and mysql.connector. Of course, you would also need to create your own basic Telegram bot via @BotFather in order to have access to unique bot token if you want to use the script for your own needs.
